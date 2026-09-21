@@ -152,7 +152,7 @@ init_var() {
     done
 
     # Normalize the kernel repository URL format
-    [[ -z "${debs_repo}" ]] && debs_repo="ophub/fnnas"
+    [[ -z "${debs_repo}" ]] && debs_repo="icnbing/kernel"
     [[ "${debs_repo}" =~ ^https: ]] && debs_repo="$(echo ${debs_repo} | awk -F'/' '{print $4"/"$5}')"
     kernel_api="https://github.com/${debs_repo}"
 
