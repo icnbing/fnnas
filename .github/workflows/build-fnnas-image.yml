@@ -39,9 +39,10 @@ on:
       fnnas_kernel:
         description: "Select fnnas kernel version"
         required: false
-        default: "6.18.y"
+        default: "6.18.52"
         type: choice
         options:
+          - 6.18.52
           - 6.18.y
           - 6.12.y
       auto_kernel:
