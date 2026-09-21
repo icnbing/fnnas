@@ -232,7 +232,7 @@ download_dtbs() {
             grep -oP "${kernel_verpatch}\.[0-9]+(?=\.tar\.gz)" |
             sort -urV | head -n 1
     )"
-    [[ -n "${latest_version}" ]] || error_msg "Failed to query kernel DTB version from [ https://github.com/ophub/kernel ]."
+    [[ -n "${latest_version}" ]] || error_msg "Failed to query kernel DTB version from [ https://github.com/icnbing/kernel ]."
     echo -e "${INFO} Latest kernel DTB version: [ ${latest_version} ]"
 
     # Set the dtbs download path
