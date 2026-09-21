@@ -86,7 +86,7 @@ uboot_repo="https://github.com/ophub/u-boot"
 firmware_repo="https://github.com/ophub/firmware"
 
 # Kernel download repository
-kernel_repo="https://github.com/ophub/fnnas"
+kernel_repo="https://github.com/icnbing/fnnas"
 # Default kernel versions
 allwinner_kernel=("6.12.y" "6.18.y")
 amlogic_kernel=("6.12.y" "6.18.y")
@@ -1142,7 +1142,7 @@ refactor_rootfs() {
         "MAINLINE_UBOOT='${RECORD_MAINLINE_UBOOT}'"
         "BOOTLOADER_IMG='${RECORD_BOOTLOADER_IMG}'"
         "FNNAS_WEBSITE='fnnas.com'"
-        "REBUILD_REPOSITORY='github.com/ophub/fnnas'"
+        "REBUILD_REPOSITORY='github.com/icnbing/fnnas'"
         "CONTRIBUTORS='${CONTRIBUTORS}'"
         "BUILDER_NAME='${builder_name}'"
         "PACKAGED_DATE='$(date +%Y-%m-%d)'"
